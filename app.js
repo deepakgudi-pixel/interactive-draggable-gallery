@@ -7,10 +7,9 @@ let isActive = false;
 
 const init = () => {
   gsap.from(frames, {
-    duration: 1.8,
+    duration: 3,
     scale: 0,
     ease: "expo.inOut",
-    onComplete: drag,
     stagger: 0.08,
   });
 };
@@ -35,6 +34,8 @@ const drag = () => {
     },
   });
 };
+
+drag();
 
 window.onload = () => {
   init();
