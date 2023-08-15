@@ -1,17 +1,15 @@
 const hero = document.querySelector(".section__one"),
-  wrapper = hero.querySelector(".wrapper");
+wrapper = hero.querySelector(".wrapper");
 frames = hero.querySelectorAll(".frame");
 frameImages = hero.querySelectorAll(".frame_figure_img");
 
-let isActive = false;
 
 const init = () => {
   gsap.from(frames, {
-    duration: 1.8,
+    duration: 1,
     scale: 0,
-    ease: "expo.inOut",
     onComplete: drag,
-    stagger: 0.08,
+    stagger: 0.4,
   });
 };
 
@@ -36,6 +34,5 @@ const drag = () => {
   });
 };
 
-window.onload = () => {
-  init();
-};
+init();
+
