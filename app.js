@@ -1,17 +1,8 @@
 const hero = document.querySelector(".section__one"),
-wrapper = hero.querySelector(".wrapper");
+  wrapper = hero.querySelector(".wrapper");
 frames = hero.querySelectorAll(".frame");
 frameImages = hero.querySelectorAll(".frame_figure_img");
 
-
-const init = () => {
-  gsap.from(frames, {
-    duration: 1,
-    scale: 0,
-    onComplete: drag,
-    stagger: 0.4,
-  });
-};
 
 const drag = () => {
   Draggable.create(wrapper, {
@@ -34,5 +25,6 @@ const drag = () => {
   });
 };
 
-init();
+
+drag();
 
