@@ -3,6 +3,17 @@ const hero = document.querySelector(".section__one"),
 frames = hero.querySelectorAll(".frame");
 frameImages = hero.querySelectorAll(".frame_figure_img");
 
+let isActive = false;
+
+const init = () => {
+  gsap.from(frames, {
+    duration: 1.8,
+    scale: 0,
+    ease: "expo.inOut",
+    onComplete: drag,
+    stagger: 0.08,
+  });
+};
 
 const drag = () => {
   Draggable.create(wrapper, {
@@ -25,6 +36,6 @@ const drag = () => {
   });
 };
 
-
-drag();
-
+window.onload = () => {
+  init();
+};
