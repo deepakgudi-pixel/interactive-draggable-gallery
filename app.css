@@ -1,0 +1,189 @@
+:root{
+    --primary: #b3abd0;
+    --secondary: #d3fdad;
+    --alternate: #000000;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html{
+ font-size: max(100vw  / 1920 * 10);
+}
+
+body{
+    background-color: var(--primary);
+    color: var(--secondary);
+    overflow: hidden;
+}
+
+.section__one{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.wrapper{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 320rem;
+    height: 200rem;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    touch-action: none;
+    transition: transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.frame{
+    position: absolute;
+    display: flex;
+    padding: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--secondary);
+    color: var(--alternate);
+}
+
+/* frame positioning */
+
+.frame:nth-child(1){
+    top: 35rem;
+    left: 60rem;
+}
+
+.frame:nth-child(2){
+    top: 25rem;
+    left: 120rem;
+}
+
+.frame:nth-child(3){
+    top: 40rem;
+    left: 165rem;
+}
+
+
+.frame:nth-child(4){
+    top: 35rem;
+    left: 240rem;
+}
+
+.frame:nth-child(5){
+    top: 85rem;
+    left: 50rem;
+}
+
+.frame:nth-child(6){
+    top: 70rem;
+    left: 105rem;
+}
+
+.frame:nth-child(7){
+    top: 95rem;
+    left: 155rem;
+}
+
+.frame:nth-child(8){
+    top: 65rem;
+    left: 205rem;
+}
+
+
+.frame:nth-child(9){
+    top: 65rem;
+    left: 205rem;
+}
+
+.frame:nth-child(10){
+    top: 150rem;
+    left: 120rem;
+}
+
+.frame:nth-child(11){
+    top: 135rem;
+    left: 190rem;
+}
+
+.frame:nth-child(12){
+    top: 110rem;
+    left: 235rem;
+}
+
+.figure_frame{
+  position: relative;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+/* width and height for frames */
+
+.frame:nth-child(1) .figure_frame{
+    width: 20rem;
+    height: 25rem;
+}
+
+.frame:nth-child(2) .figure_frame{
+    width: 20rem;
+    height: 30rem;
+}
+
+.frame:nth-child(3) .figure_frame{
+    width: 30rem;
+    height: 30rem;
+}
+
+.frame:nth-child(4) .figure_frame{
+    width: 25rem;
+    height: 30rem;
+}
+
+.frame:nth-child(5) .figure_frame{
+    width: 25rem;
+    height: 30rem;
+}
+
+.frame:nth-child(6) .figure_frame{
+    width: 25rem;
+    height: 30rem;
+}
+
+.frame:nth-child(7) .figure_frame{
+    width: 40rem;
+    height: 30rem;
+}
+
+.frame:nth-child(8) .figure_frame{
+    width: 20rem;
+    height: 30rem;
+}
+
+.frame:nth-child(9) .figure_frame{
+    width: 35rem;
+    height: 30rem;
+}
+
+.frame:nth-child(10) .figure_frame{
+    width: 20rem;
+    height: 25rem;
+}
+
+.frame:nth-child(11) .figure_frame{
+    width: 20rem;
+    height: 25rem;
+}
+
+.frame:nth-child(12) .figure_frame{
+    width: 35rem;
+    height: 30rem;
+}
+
+
+
+
